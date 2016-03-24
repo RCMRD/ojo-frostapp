@@ -8,7 +8,7 @@ var Hawk		= require('hawk'),
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Open GeoSocial Consumer' })
+  res.render('index', { title: 'Open GeoSocial Frost App' })
 };
 
 exports.floods = function(req, res){

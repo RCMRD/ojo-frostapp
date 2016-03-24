@@ -67,19 +67,19 @@ app.get('/snow', 		routes.snow);
 app.get('/opensearch', 	routes.opensearch);
 
 // env
-var appId		= process.env.FACEBOOK_APP_ID
-var appSecret	= process.env.FACEBOOK_APP_SECRET
+//var appId		= process.env.FACEBOOK_APP_ID
+//var appSecret	= process.env.FACEBOOK_APP_SECRET
 
-console.log("FB appId", appId)
-console.log("FB secret", appSecret)
+//console.log("FB appId", appId)
+//console.log("FB secret", appSecret)
 
-app.facebook	= facebook.init(appId, appSecret)
+//app.facebook	= facebook.init(appId, appSecret)
 
-app.facebook.GenerateSecret(function(err, secret) {
-	console.log("Application Hawk Key:", err,secret)
-	app.hawk_secret = secret
-	app.hawk_id 	= appId
-})		
+//app.facebook.GenerateSecret(function(err, secret) {
+//	console.log("Application Hawk Key:", err,secret)
+//	app.hawk_secret = secret
+//	app.hawk_id 	= appId
+//})		
 
 var server = app.listen(3000, function(){
     var host = server.address().address;
